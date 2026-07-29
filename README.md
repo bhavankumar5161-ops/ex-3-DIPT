@@ -71,14 +71,12 @@ Display original color image, histogram, enhanced image, and enhanced histogram 
 ## Program
 
 ### Developed By:
-**Name:** __P.Bhavankumar________________  
+**Name:** P.Bhavankumar
 
-### Register No:
-___212225240026_________________________  
-
+### Register No: 212225240026
 ---
 # program
-
+```
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -123,6 +121,7 @@ plt.figure(figsize = [15,4])
 plt.subplot(121); plt.hist(img.ravel(),256,range = [0, 256]); plt.title('Original Image')
 plt.subplot(122); plt.hist(img_eq.ravel(),256,range = [0, 256]); plt.title('Histogram Equalized')
 
+```
 
 ##  Output
 
@@ -131,18 +130,26 @@ plt.subplot(122); plt.hist(img_eq.ravel(),256,range = [0, 256]); plt.title('Hist
 - Original grayscale image is displayed:
 
 <img width="740" height="535" alt="Screenshot 2026-07-29 082448" src="https://github.com/user-attachments/assets/1c10a2de-4941-40cb-8955-4d3efd8c7023" />
+
+
  
 - Histogram of original grayscale image is plotted :
 
 <img width="778" height="591" alt="Screenshot 2026-07-29 082555" src="https://github.com/user-attachments/assets/733443f6-0ee6-457e-ad30-7ba0880370a9" />
 
+
+
 - Enhanced image after histogram equalization is displayed:
 
 <img width="782" height="590" alt="Screenshot 2026-07-29 082632" src="https://github.com/user-attachments/assets/4cbcde6e-f4c0-4797-b1a8-fc9263885506" />
+
+
   
 - Histogram of enhanced grayscale image shows improved contrast :
 
 <img width="742" height="537" alt="Screenshot 2026-07-29 082718" src="https://github.com/user-attachments/assets/3a78d7c5-80e8-44f8-9be3-9fdda953254d" />
+
+
 
 
 ### Color Image Histogram Equalization
@@ -151,13 +158,19 @@ plt.subplot(122); plt.hist(img_eq.ravel(),256,range = [0, 256]); plt.title('Hist
 
 - <img width="740" height="536" alt="Screenshot 2026-07-29 082846" src="https://github.com/user-attachments/assets/1d189568-e444-4937-83d6-27ca6a36380e" />
 
+
+
 - Histogram of B, G, R channels is plotted :
 
 - <img width="795" height="592" alt="Screenshot 2026-07-29 082923" src="https://github.com/user-attachments/assets/524e0b73-9370-4db7-9915-6ac07c10b31e" />
 
+
+
 - Enhanced image after HSV-based equalization is displayed:
 
 - <img width="1097" height="312" alt="Screenshot 2026-07-29 083030" src="https://github.com/user-attachments/assets/a941a6d2-a67f-4af8-aa5c-32e9941e52fb" />
+
+
 
 - Histogram of enhanced image shows better intensity distribution:
 
